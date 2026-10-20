@@ -10,17 +10,17 @@ What began as an investigation into overall financial performance ultimately led
 
 ## Tools and Technologies
 
-• **Data source:** SEC.gov Company Facts API
+• **<ins>Data source:<ins>** SEC.gov Company Facts API
 
-• **Data extraction and transformation:** Python, Pandas
+• **<ins>Data extraction and transformation:<ins>** Python, Pandas
 
-• **Database:** PostgreSQL
+• **<ins>Database:<ins>** PostgreSQL
 
-• **Querying and database design:** SQL
+• **<ins>Querying and database design:<ins>** SQL
 
-• **Visualization and analysis:** Power BI, DAX
+• **<ins>Visualization and analysis:<ins>** Power BI, DAX
 
-• **Data format:** CSV
+• **<ins>Data format:<ins>** CSV
 
 ## Pipeline Architecture
 
@@ -36,11 +36,11 @@ One challenge I faced during this process was reconciling the available XBRL con
 
 My initial attempt used the **StockholdersEquity** concept. I then applied the accounting equation:
 
-Assets = Liabilities + Equity
+<ins>Assets = Liabilities + Equity<ins>
 
 Rearranged, this meant:
 
-Total Liabilities = Total Assets - Total Equity
+<ins>Total Liabilities = Total Assets - Total Equity<ins>
 
 Unfortunately, using this approach, the resulting liabilities figures did not match Walmart's reported financial statements in its reported 10-K form. This lead me to re-investigate the available equity-related XBRL concepts. Eventually, I identified **StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest** (try saying that in one go). This broader measure includes equity attributable to non-controlling interests in addition to equity attributable to Walmart's stockholders. In other words, it was the equity measure I _actually_ needed for this calculation.
 
@@ -60,11 +60,11 @@ The prepared dataset was loaded into PostgreSQL through a staging table and tran
 
 The final model contains:
 
-• **dim_company:** company dimension.
+• **<ins>dim_company:<ins>** company dimension.
 
-• **dim_fiscal_year:** fiscal-year dimension.
+• **<ins>dim_fiscal_year:<ins>** fiscal-year dimension.
 
-• **fact_financials:** financial measures for each company-year combination.
+• **<ins>fact_financials:<ins>** financial measures for each company-year combination.
 
 The fact table uses a composite primary key on company and fiscal year, with foreign keys linking it to the dimension tables.
 
@@ -72,13 +72,13 @@ The fact table uses a composite primary key on company and fiscal year, with for
 
 ## Power BI Analysis
 
-#Executive Overview: 
+# Executive Overview: 
 
 <img width="1957" height="1100" alt="image" src="https://github.com/user-attachments/assets/7c2dad8f-8634-486a-842a-90b4b61a2571" />
 
 _This page compares revenue growth, operating margins, and operating cash flow margins across the three companies._
 
-#Financial Performance: 
+# Financial Performance: 
 
 <img width="1939" height="1091" alt="image" src="https://github.com/user-attachments/assets/9d337ec4-325f-40fe-ad7c-4dcd6b594acb" />
 
