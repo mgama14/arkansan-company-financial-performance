@@ -74,7 +74,7 @@ The fact table uses a composite primary key on company and fiscal year, with for
 
 ### Executive Overview: 
 
-<img width="1957" height="1100" alt="image" src="https://github.com/user-attachments/assets/7c2dad8f-86#4-486a-842a-90b4b61a2571" />
+<img width="1934" height="1089" alt="image" src="https://github.com/user-attachments/assets/f9af63fb-d1f8-433e-91ea-7a1fbcb6911b" />
 
 _This page compares revenue growth, operating margins, and operating cash flow margins across the three companies._
 
