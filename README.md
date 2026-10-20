@@ -60,11 +60,11 @@ The prepared dataset was loaded into PostgreSQL through a staging table and tran
 
 The final model contains:
 
-• **<ins>dim_company:<ins>** company dimension.
+• **<ins>dim_company:<ins>** Company dimension.
 
-• **<ins>dim_fiscal_year:<ins>** fiscal-year dimension.
+• **<ins>dim_fiscal_year:<ins>** Fiscal-year dimension.
 
-• **<ins>fact_financials:<ins>** financial measures for each company-year combination.
+• **<ins>fact_financials:<ins>** Financial measures for each company-year combination.
 
 The fact table uses a composite primary key on company and fiscal year, with foreign keys linking it to the dimension tables.
 
@@ -88,7 +88,7 @@ DAX measures include revenue growth, operating margin, net profit margin, operat
 
 The report also includes fiscal-year filtering and drill-through navigation from the executive overview to the company-level financial performance page.
 
-#**Key Findings:**
+# **Key Findings:**
 
 • **Walmart demonstrated the strongest cumulative revenue growth.** Across the three companies, Walmart's revenue grew by approximately 30% between fiscal years 2020 and 2025. It's the juggernaut! 
 
