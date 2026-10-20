@@ -82,16 +82,18 @@ The report also includes fiscal-year filtering and drill-through navigation from
 
 #**Key Findings:**
 
-• As you can imagine, Walmart demonstrated the strongest cumulative revenue growth among the three companies. It's the juggernaut!
+• **Walmart demonstrated the strongest cumulative revenue growth.** Across the three companies, Walmart's revenue grew by approximately 30% between fiscal years 2020 and 2025. It's the juggernaut! 
 
-• In 2023, J.B Hunt experiences an _extreme_ drop in revenue growth, with a drop of -13.39%. 
+• **In 2023, J.B Hunt experiences an _extreme_ drop in revenue growth, with a drop of -13.39%.** This really caught my eye, because I believe it makes J.B Hunt an interesting case study into how declining revenue can coexist with other measures of financial performance. Despite the drop, J.B Hunt regularly leads in average annual operating margin and annual operating cash flow margin. From a high-level perspective, I assume it may be that 2022 was just being a _very_ profitable year for a transportation company due to unique economic factors associated with the pandemic. J. B Hunt not being able to carry that momentum into future years is relatively understandable.
 
-• Despite this, J.B Hunt regularly leads in average annual operating margin and annual operating cash flow margin, and they have stabilized very well since. I chalk this up to 2022 just being a _very_ profitable year for a transportation company due to unique economic factors associated with the pandemic. J. B Hunt not being able to carry that momentum into future years is relatively understandable.
+• **Most importantly, revenue alone does not tell a full story**
 
 ## Limitations 
 
 • It must be stated that these companies do operate in very different industries, which could help explain variance in revenue structures and, therefor, margins.
+
 • Fiscal year end dates differ, so the reported fiscal years are not perfectly aligned calendar periods.
+
 • As previously stated, the granularity of the report is limited, therefor quarter-by-quarter nuance is lost. This also limits forecast ability.
 
 In the future, I would love to expand this so it does include quarter-by-quarter information and an in-depth date dimension. I would love to study the trajectory of these three companies. It would also allow a much broader financial analysis. For the scope of the project, however, I do think I have glimpsed an interesting, high-level view of my *new* hometown corporations. 
