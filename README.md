@@ -94,14 +94,20 @@ The report also includes fiscal-year filtering and drillthrough navigation from 
 
 • **In 2023, J.B Hunt experienced an _extreme_ drop in revenue growth, with a drop of -13.39%.** This really caught my eye, because I believe it makes J.B Hunt an interesting case study into how declining revenue can coexist with other measures of financial performance. Despite the drop, J.B Hunt regularly leads in average annual operating margin and annual operating cash flow margin. From a high-level perspective, I assume it may be that 2022 was just being a _very_ profitable year for a transportation company due to unique economic factors associated with the pandemic. J. B Hunt not being able to carry that momentum into future years is relatively understandable.
 
-• **Most importantly, revenue alone does not tell a full story**
+• **Most importantly, revenue alone does not tell a full story**. Comparing revenue growth alongside operating margins and operating cash flow margins gave me a more nuanced view of financial performance. The project reinforced my understanding that growth, profitability, and cash generation are related but distinct measures, and that no single metric can establish a company's overall financial health.
 
 ## Limitations 
 
-• It must be stated that these companies do operate in very different industries, which could help explain variance in revenue structures and, therefore, margins.
+• **<ins>Industry differences:<ins>** It must be stated that these companies do operate in very different industries, which affects their business models, revenue structures, and margins. Their results are informative to compare, but not directly interchangeable.
 
-• Fiscal year end dates differ, so the reported fiscal years are not perfectly aligned calendar periods.
+• **<ins>Fiscal-year alignment:<ins>** Fiscal year end dates differ, meaning the reported years do not represent perfectly aligned calendar periods.
 
-• As previously stated, the granularity of the report is limited, therefor quarter-by-quarter nuance is lost. This also limits forecast ability.
+• **<ins>Annual granularity:<ins>** As previously stated, the granularity of the report is limited, therefor quarter-by-quarter nuance is lost. This also limits forecast ability.
 
-In the future, I would love to expand this so it does include quarter-by-quarter information and an in-depth date dimension. I would love to study the trajectory of these three companies. It would also allow a much broader financial analysis. For the scope of the project, however, I do think I have glimpsed an interesting, high-level view of my *new* hometown corporations. 
+• **<ins>Limited sample:<ins>** The project examines three companies over six fiscal years. Its findings should not be generalized to entire industries without additional research.
+
+## Future Improvements
+
+In the future, I'd love to expand this project to include quarterly data and a more detailed date dimension, allowing me to study the financial trajectories of these companies at a finer level. This would open the door to a broader analysis of seasonal patterns, short-term fluctuations, and the timing of changes in financial performance. 
+
+For now, though, I'm pleased to have gained a glimpse into the financial performance of some of my _new_ hometown corporations, and to have followed that curiosity all the way from raw SEC data to an interactive Power BI report!
