@@ -11,10 +11,15 @@ What began as an investigation into overall financial performance ultimately led
 ## Tools and Technologies
 
 • **Data source:** SEC.gov Company Facts API
+
 • **Data extraction and transformation:** Python, Pandas
+
 • **Database:** PostgreSQL
+
 • **Querying and database design:** SQL
+
 • **Visualization and analysis:** Power BI, DAX
+
 • **Data format:** CSV
 
 ## Pipeline Architecture
@@ -25,9 +30,7 @@ SEC Company Facts API → Python/Pandas → CSV → PostgreSQL → Power BI
 
 Python was used to retrieve financial facts from the SEC Company Facts API to and extract relevant annual financial metrics. **It is important to note that for the scope of this project, I only extracted annual figures corresponding to each company's reported fiscal year.** This was done to give me a broad overview look at financial performance, but as such, the granularity of the project is limited to annual.
 
-Pandas was used to select, organize, and combine the financial records into a structured company-year dataset before exporting the results to CSV.
-
-Metrics include revenue, operating income, net income, total assets, total equity, total liabilities, and operating cash flow.
+Pandas was used to select, organize, and combine the financial records into a structured company-year dataset before exporting the results to CSV. Metrics include revenue, operating income, net income, total assets, total equity, total liabilities, and operating cash flow.
 
 One challenge I faced during this process was reconciling the available XBRL concepts with the financial figures I actually needed. While extracting Walmart's data, I was able to retrieve total assets, but I needed to calculate total liabilities myself. To do that, I first needed to identify the correct equity figure.
 
@@ -50,6 +53,7 @@ This experience highlighted the importance of understanding the definitions behi
 ## Database Design
 
 <img width="1204" height="819" alt="image" src="https://github.com/user-attachments/assets/403e4d40-4e4d-4129-86ec-a68960a59c89" />
+
 _The schema loaded into PowerBI_
 
 The prepared dataset was loaded into PostgreSQL through a staging table and transformed into a dimensional model.
@@ -69,11 +73,13 @@ The fact table uses a composite primary key on company and fiscal year, with for
 #Executive Overview: 
 
 <img width="1957" height="1100" alt="image" src="https://github.com/user-attachments/assets/7c2dad8f-8634-486a-842a-90b4b61a2571" />
+
 _This page compares revenue growth, operating margins, and operating cash flow margins across the three companies._
 
 #Financial Performance: 
 
 <img width="1939" height="1091" alt="image" src="https://github.com/user-attachments/assets/9d337ec4-325f-40fe-ad7c-4dcd6b594acb" />
+
 _This page provides a detailed six-year view of a selected company's revenue, profitability, cash flow margins, and financial position._
 
 DAX measures include revenue growth, operating margin, net profit margin, operating cash flow margin, cumulative revenue growth, and average annual operating margin.
