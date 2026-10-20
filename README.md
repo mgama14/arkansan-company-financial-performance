@@ -72,13 +72,13 @@ The fact table uses a composite primary key on company and fiscal year, with for
 
 ## Power BI Analysis
 
-# Executive Overview: 
+### Executive Overview: 
 
-<img width="1957" height="1100" alt="image" src="https://github.com/user-attachments/assets/7c2dad8f-8634-486a-842a-90b4b61a2571" />
+<img width="1957" height="1100" alt="image" src="https://github.com/user-attachments/assets/7c2dad8f-86#4-486a-842a-90b4b61a2571" />
 
 _This page compares revenue growth, operating margins, and operating cash flow margins across the three companies._
 
-# Financial Performance: 
+### Financial Performance: 
 
 <img width="1939" height="1091" alt="image" src="https://github.com/user-attachments/assets/9d337ec4-325f-40fe-ad7c-4dcd6b594acb" />
 
