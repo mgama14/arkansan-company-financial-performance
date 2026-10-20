@@ -17,11 +17,11 @@ What began as an investigation into overall financial performance ultimately led
 • **Visualization and analysis:** Power BI, DAX
 • **Data format:** CSV
 
-##Pipeline Architecture
+## Pipeline Architecture
 
 SEC Company Facts API → Python/Pandas → CSV → PostgreSQL → Power BI
 
-##Data Extraction and Transformation
+## Data Extraction and Transformation
 
 Python was used to retrieve financial facts from the SEC Company Facts API to and extract relevant annual financial metrics. **It is important to note that for the scope of this project, I only extracted annual figures corresponding to each company's reported fiscal year.** This was done to give me a broad overview look at financial performance, but as such, the granularity of the project is limited to annual.
 
@@ -47,7 +47,7 @@ This experience highlighted the importance of understanding the definitions behi
 
 [This roadbump is still visible in the Walmart extraction code, available here.](https://github.com/mgama14/arkansan-company-financial-performance/tree/main/python%20scripts)
 
-##Database Design
+## Database Design
 
 <img width="1204" height="819" alt="image" src="https://github.com/user-attachments/assets/403e4d40-4e4d-4129-86ec-a68960a59c89" />
 _The schema loaded into PowerBI_
