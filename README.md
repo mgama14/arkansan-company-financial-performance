@@ -54,14 +54,16 @@ This experience highlighted the importance of understanding the definitions behi
 
 <img width="1204" height="819" alt="image" src="https://github.com/user-attachments/assets/403e4d40-4e4d-4129-86ec-a68960a59c89" />
 
-_The schema loaded into PowerBI_
+_The schema loaded into Power BI._
 
 The prepared dataset was loaded into PostgreSQL through a staging table and transformed into a dimensional model.
 
 The final model contains:
 
 • **dim_company:** company dimension.
+
 • **dim_fiscal_year:** fiscal-year dimension.
+
 • **fact_financials:** financial measures for each company-year combination.
 
 The fact table uses a composite primary key on company and fiscal year, with foreign keys linking it to the dimension tables.
