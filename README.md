@@ -28,7 +28,7 @@ SEC Company Facts API → Python/Pandas → CSV → PostgreSQL → Power BI
 
 ## Data Extraction and Transformation
 
-Python was used to retrieve financial facts from the SEC Company Facts API to and extract relevant annual financial metrics. **It is important to note that for the scope of this project, I only extracted annual figures corresponding to each company's reported fiscal year.** This was done to give me a broad overview look at financial performance, but as such, the granularity of the project is limited to annual.
+Python was used to retrieve financial facts from the SEC Company Facts API and extract relevant annual financial metrics. **It is important to note that for the scope of this project, I only extracted annual figures corresponding to each company's reported fiscal year.** This was done to give me a broad overview of financial performance, but as such, the granularity of the project is limited to annual.
 
 Pandas was used to select, organize, and combine the financial records into a structured company-year dataset before exporting the results to CSV. Metrics include revenue, operating income, net income, total assets, total equity, total liabilities, and operating cash flow.
 
@@ -46,7 +46,7 @@ Unfortunately, using this approach, the resulting liabilities figures did not ma
 
 After grabbing that, I ran the calculations again, and I then validated the calculated figures against Walmart's official SEC Form 10-K to confirm that they reconciled with the reported financial statements.
 
-This experience highlighted the importance of understanding the definitions behind financial data rather than relying on XBRL concepts alone. It also illustrated to me how important it was to actively be cross-checking my extractions against the actual financial reports put out by the compan#s I was investigating. Had I just assumed the initial numbers provided by using  **StockholdersEquity** were correct, Walmart's entire financial findings would be off, which would be devastating. 
+This experience highlighted the importance of understanding the definitions behind financial data rather than relying on XBRL concepts alone. It also illustrated to me how important it was to actively be cross-checking my extractions against the actual financial reports put out by the companies I was investigating. Had I just assumed the initial numbers provided by using  **StockholdersEquity** were correct, Walmart's entire financial findings would be off, which would be devastating. 
 
 [This roadbump is still visible in the Walmart extraction code, available here.](https://github.com/mgama14/arkansan-company-financial-performance/tree/main/python%20scripts)
 
@@ -86,19 +86,19 @@ _This page provides a detailed six-year view of a selected company's revenue, pr
 
 DAX measures include revenue growth, operating margin, net profit margin, operating cash flow margin, cumulative revenue growth, and average annual operating margin.
 
-The report also includes fiscal-year filtering and drill-through navigation from the executive overview to the company-level financial performance page.
+The report also includes fiscal-year filtering and drillthrough navigation from the executive overview to the company-level financial performance page.
 
 # **Key Findings:**
 
 • **Walmart demonstrated the strongest cumulative revenue growth.** Across the three companies, Walmart's revenue grew by approximately 30% between fiscal years 2020 and 2025. It's the juggernaut! 
 
-• **In 2023, J.B Hunt experiences an _extreme_ drop in revenue growth, with a drop of -13.39%.** This really caught my eye, because I believe it makes J.B Hunt an interesting case study into how declining revenue can coexist with other measures of financial performance. Despite the drop, J.B Hunt regularly leads in average annual operating margin and annual operating cash flow margin. From a high-level perspective, I assume it may be that 2022 was just being a _very_ profitable year for a transportation company due to unique economic factors associated with the pandemic. J. B Hunt not being able to carry that momentum into future years is relatively understandable.
+• **In 2023, J.B Hunt experienced an _extreme_ drop in revenue growth, with a drop of -13.39%.** This really caught my eye, because I believe it makes J.B Hunt an interesting case study into how declining revenue can coexist with other measures of financial performance. Despite the drop, J.B Hunt regularly leads in average annual operating margin and annual operating cash flow margin. From a high-level perspective, I assume it may be that 2022 was just being a _very_ profitable year for a transportation company due to unique economic factors associated with the pandemic. J. B Hunt not being able to carry that momentum into future years is relatively understandable.
 
 • **Most importantly, revenue alone does not tell a full story**
 
 ## Limitations 
 
-• It must be stated that these companies do operate in very different industries, which could help explain variance in revenue structures and, therefor, margins.
+• It must be stated that these companies do operate in very different industries, which could help explain variance in revenue structures and, therefore, margins.
 
 • Fiscal year end dates differ, so the reported fiscal years are not perfectly aligned calendar periods.
 
